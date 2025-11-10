@@ -39,6 +39,42 @@ const initialState: Blog[] = [
     title: "eum et est occaecati",
     body: "ullam et saepe reiciendis voluptatem adipisci\nsit amet autem assumenda provident rerum culpa\nquis hic commodi nesciunt rem tenetur doloremque ipsam iure\nquis sunt voluptatem rerum illo velit",
   },
+  {
+    username: "janedoe",
+    id: 5,
+    date: new Date(
+      "Mon Nov 10 2025 10:38:09 GMT+0530 (India Standard Time)"
+    ).toISOString(),
+    title: "nesciunt quas odio",
+    body: "repudiandae veniam quaerat sunt sed\nalias aut fugiat sit autem sed est\nvoluptatem omnis possimus esse voluptatibus quis\nest aut tenetur dolor neque",
+  },
+  {
+    username: "janedoe",
+    id: 6,
+    date: new Date(
+      "Thu Nov 06 2025 10:38:09 GMT+0530 (India Standard Time)"
+    ).toISOString(),
+    title: "dolorem eum magni eos aperiam quia",
+    body: "ut aspernatur corporis harum nihil quis provident sequi\nmollitia nobis aliquid molestiae\nperspiciatis et ea nemo ab reprehenderit accusantium quas\nvoluptate dolores velit et doloremque molestiae",
+  },
+  {
+    username: "janedoe",
+    id: 7,
+    date: new Date(
+      "Fri Nov 03 2025 10:38:09 GMT+0530 (India Standard Time)"
+    ).toISOString(),
+    title: "magnam facilis autem",
+    body: "dolore placeat quibusdam ea quo vitae\nmagni quis enim qui quis quo nemo aut saepe\nquidem repellat excepturi ut quia\nsunt ut sequi eos ea sed quas",
+  },
+  {
+    username: "janedoe",
+    id: 8,
+    date: new Date(
+      "Wed Nov 05 2025 10:38:09 GMT+0530 (India Standard Time)"
+    ).toISOString(),
+    title: "dolorem dolore est ipsam",
+    body: "dignissimos aperiam dolorem qui eum\nfacilis quibusdam animi sint suscipit qui sint possimus cum\nquaerat magni maiores excepturi\nipsam ut commodi dolor voluptatum modi aut vitae",
+  },
 ];
 
 const blogsSlice = createSlice({
