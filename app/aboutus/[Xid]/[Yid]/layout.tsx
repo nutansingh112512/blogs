@@ -6,12 +6,12 @@ import { ReactNode } from "react";
 
 interface LayoutProps {
   children: ReactNode;
-  params: { Xid: string; Yid: string }; // Adjust based on your dynamic segments
+  params: { Xid: string; Yid: string };
 }
 
 export default async function YidLayout({ children, params }: LayoutProps) {
   const { options } = AboutDatas as AboutData;
-  const { Xid, Yid } = await Promise.resolve(params);
+  const { Xid, Yid } = params;
   const Yoptions = options
     .find((opt) => String(opt.id) === Xid)
     ?.info.find((opt) => opt.id === Yid)?.detail;
