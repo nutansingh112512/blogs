@@ -2,16 +2,17 @@ import Options from "@/app/components/Options";
 import { AboutDatas } from "../../aboutusData";
 import type { AboutData } from "../../aboutusData";
 import { redirect } from "next/navigation";
+import { ReactNode } from "react";
 
 export default async function YidLayout({
   children,
   params,
 }: Readonly<{
-  children: React.ReactNode;
+  children: ReactNode;
   params: { Xid: string; Yid: string };
 }>) {
   const { options } = AboutDatas as AboutData;
-  const { Xid, Yid } = await params;
+  const { Xid, Yid } = await Promise.resolve(params);
   const Yoptions = options
     .find((opt) => String(opt.id) === Xid)
     ?.info.find((opt) => opt.id === Yid)?.detail;
