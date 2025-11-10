@@ -4,13 +4,12 @@ import type { AboutData } from "../../aboutusData";
 import { redirect } from "next/navigation";
 import { ReactNode } from "react";
 
-export default async function YidLayout({
-  children,
-  params,
-}: Readonly<{
+interface LayoutProps {
   children: ReactNode;
-  params: { Xid: string; Yid: string };
-}>) {
+  params: { Xid: string; Yid: string }; // Adjust based on your dynamic segments
+}
+
+export default async function YidLayout({ children, params }: LayoutProps) {
   const { options } = AboutDatas as AboutData;
   const { Xid, Yid } = await Promise.resolve(params);
   const Yoptions = options
