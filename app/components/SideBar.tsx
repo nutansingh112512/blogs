@@ -18,7 +18,7 @@ export default function SideBar() {
   const handleLogout = () => {
     dispatch(updateLogin(""));
     setIsOpen(false);
-    router.replace("/login");
+    router.replace("/signin");
   };
 
   return (
