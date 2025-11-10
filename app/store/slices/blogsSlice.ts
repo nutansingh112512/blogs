@@ -61,7 +61,7 @@ const initialState: Blog[] = [
     username: "janedoe",
     id: 7,
     date: new Date(
-      "Fri Nov 03 2025 10:38:09 GMT+0530 (India Standard Time)"
+      "Fri Nov 07 2025 10:38:09 GMT+0530 (India Standard Time)"
     ).toISOString(),
     title: "magnam facilis autem",
     body: "dolore placeat quibusdam ea quo vitae\nmagni quis enim qui quis quo nemo aut saepe\nquidem repellat excepturi ut quia\nsunt ut sequi eos ea sed quas",
