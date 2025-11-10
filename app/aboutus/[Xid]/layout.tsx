@@ -6,7 +6,7 @@ import { redirect } from "next/navigation";
 export default async function XidLayout({
   children,
   params,
-}: Readonly<{ children: React.ReactNode; params: { Xid: string } }>) {
+}: Readonly<{ children: React.ReactNode; params: Promise<{ Xid: string }> }>) {
   const { options } = AboutDatas as AboutData;
   const { Xid } = await params;
   const Xoptions = options.find((opt) => String(opt.id) === Xid)?.info;
